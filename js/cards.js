@@ -32,7 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
                                     <ul>
                                         ${product.specs.map(s => `<li>${s}</li>`).join('')}
                                     </ul>
-                                    <button class="btn">Купить сейчас</button>
+                                    <button class="btn" onclick="sendTransaction('${product.price}')">
+   Оплатить в USDT
+</button>
                                 </div>
                             </div>
                         </div>
